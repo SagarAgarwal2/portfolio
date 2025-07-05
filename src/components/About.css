@@ -1,0 +1,135 @@
+.about {
+  background: linear-gradient(135deg, #181f2a 0%, #232946 100%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.education-card {
+  background: rgba(36, 41, 61, 0.85);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 32px 0 #23294655;
+  border: 1.5px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-bottom: 30px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #a5b4fc;
+}
+
+.card-header h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-content .icon {
+  color: #4f46e5;
+}
+
+.experience-section h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 15px;
+  padding: 24px;
+  background: rgba(36, 41, 61, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px 0 #23294644;
+  border: 1.5px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.experience-icon {
+  font-size: 1.5rem;
+  color: #06b6d4;
+  margin-top: 5px;
+}
+
+.experience-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.experience-content p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+  .education-card {
+    padding: 20px;
+  }
+  .experience-item {
+    padding: 15px;
+  }
+} 
