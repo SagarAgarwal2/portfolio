@@ -7,7 +7,7 @@ const Achievements = () => {
     {
       id: 1,
       title: "Smart India Hackathon Finalist",
-      description: "Reached the final round of Smart India Hackathon, showcasing innovative solutions for national challenges.",
+      description: "Reached the final round of Smart India Hackathon of college level, showcasing innovative solutions for national challenges.",
       category: "National Competition",
       icon: <FaTrophy />,
       year: "2024",
@@ -15,8 +15,8 @@ const Achievements = () => {
     },
     {
       id: 2,
-      title: "Algorand Hackathon - Top 3%",
-      description: "Achieved top 3% ranking in the Algorand blockchain hackathon, demonstrating expertise in blockchain development.",
+      title: "Algorand Hackathon - Top 3",
+      description: "Achieved top 3 ranking in the Algorand blockchain hackathon, demonstrating expertise in blockchain development.",
       category: "Blockchain Competition",
       icon: <FaMedal />,
       year: "2024"
@@ -31,8 +31,8 @@ const Achievements = () => {
     },
     {
       id: 4,
-      title: "SheShield - 100+ Active Users",
-      description: "Successfully deployed women's safety app with over 100 active users, demonstrating real-world impact.",
+      title: "Saviher",
+      description: "Successfully developing a women safety app, demonstrating real-world impact.",
       category: "Project Achievement",
       icon: <FaStar />,
       year: "2024"

@@ -7,7 +7,7 @@ const About = () => {
     degree: "Bachelor of Technology in Computer Science",
     institution: "Birla Institute of Technology, Mesra",
     location: "Off Campus - Jaipur",
-    duration: "2021 - 2025"
+    duration: "2023 - 2027"
   };
 
   const experience = [
@@ -38,7 +38,7 @@ const About = () => {
             <h3>Who I Am</h3>
             <p>
               I'm a passionate Computer Science undergraduate at Birla Institute of Technology, 
-              Mesra (Off Campus - Jaipur), with a strong foundation in software development and 
+              Mesra, with a strong foundation in software development and 
               a keen interest in emerging technologies.
             </p>
             <p>

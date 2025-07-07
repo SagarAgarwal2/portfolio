@@ -14,7 +14,7 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: <FaGithub />,
-      url: 'https://github.com/sagaragarwal'
+      url: 'https://github.com/sagaragarwal2'
     },
     {
       name: 'LinkedIn',
@@ -24,7 +24,7 @@ const Footer = () => {
     {
       name: 'LeetCode',
       icon: <FaCode />,
-      url: 'https://leetcode.com/sagaragarwal'
+      url: 'https://leetcode.com/tnbtsper30'
     }
   ];
 

@@ -7,7 +7,7 @@ const Home = () => {
     {
       name: 'GitHub',
       icon: <FaGithub />,
-      url: 'https://github.com/sagaragarwal',
+      url: 'https://github.com/sagaragarwal2',
       color: '#333'
     },
     {
@@ -19,7 +19,7 @@ const Home = () => {
     {
       name: 'LeetCode',
       icon: <FaCode />,
-      url: 'https://leetcode.com/sagaragarwal',
+      url: 'https://leetcode.com/tnbtsper30',
       color: '#ffa116'
     }
   ];
@@ -28,17 +28,17 @@ const Home = () => {
     <section id="home" className="home dark-hero">
       <div className="home-container hero-flex">
         <div className="hero-left" data-aos="fade-right">
-          <img src="/sagar-agarwal.jpg" alt="Sagar Agarwal" className="hero-photo" />
+          <img src="/sagar.jpg.jpg" alt="Sagar Agarwal" className="hero-photo" />
         </div>
         <div className="hero-right" data-aos="fade-left">
           <h1 className="home-title">
             Hi, I'm <span className="highlight">Sagar Agarwal</span>
           </h1>
           <h2 className="home-subtitle">
-            Blockchain & Safety App Developer
+            Software Developer
           </h2>
           <p className="home-description">
-            CS undergraduate at BIT Mesra (Jaipur). I build secure, scalable apps with a passion for blockchain, full-stack, and mobile development. Let's create something impactful together!
+            CS undergraduate at BIT Mesra. I build secure, scalable apps with a passion, full-stack, and mobile development. Let's create something impactful together!
           </p>
           <div className="home-buttons">
             <button 
