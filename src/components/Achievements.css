@@ -57,6 +57,23 @@
   flex: 1;
 }
 
+/* Ensure text visibility in dark themes */
+.theme-ocean .achievement-title,
+.theme-galaxy .achievement-title {
+  color: #ffffff;
+}
+
+.theme-ocean .achievement-description,
+.theme-galaxy .achievement-description {
+  color: #e2e8f0;
+}
+
+.theme-ocean .achievement-category span,
+.theme-galaxy .achievement-category span {
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .achievement-year {
   background: var(--primary-color);
   color: white;

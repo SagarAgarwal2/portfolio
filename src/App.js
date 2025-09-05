@@ -16,7 +16,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState('ocean'); // ocean, sunset, forest, galaxy, minimal
 
   useEffect(() => {
     AOS.init({
@@ -27,14 +27,37 @@ function App() {
     });
   }, []);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  const themes = {
+    ocean: {
+      name: 'Ocean Blue',
+      className: 'theme-ocean'
+    },
+    sunset: {
+      name: 'Sunset Orange',
+      className: 'theme-sunset'
+    },
+    forest: {
+      name: 'Forest Green',
+      className: 'theme-forest'
+    },
+    galaxy: {
+      name: 'Purple Galaxy',
+      className: 'theme-galaxy'
+    },
+    minimal: {
+      name: 'Minimal Light',
+      className: 'theme-minimal'
+    }
+  };
+
+  const changeTheme = (themeName) => {
+    setCurrentTheme(themeName);
   };
 
   return (
-    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Home />
+    <div className={`App ${themes[currentTheme].className}`}>
+      <Navbar currentTheme={currentTheme} changeTheme={changeTheme} themes={themes} />
+      <Home currentTheme={currentTheme} />
       <About />
       <Skills />
       <Projects />

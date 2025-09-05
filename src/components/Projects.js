@@ -153,18 +153,6 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="projects-cta" data-aos="fade-up">
-          <p>Interested in seeing more of my work?</p>
-          <a 
-            href="https://github.com/sagaragarwal" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            <FaGithub />
-            View All Projects on GitHub
-          </a>
-        </div>
       </div>
     </section>
   );

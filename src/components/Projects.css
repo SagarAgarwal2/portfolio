@@ -298,35 +298,6 @@
   transform: scale(1.1);
 }
 
-.projects-cta {
-  text-align: center;
-  background: var(--bg-primary);
-  border-radius: 20px;
-  padding: 50px;
-  box-shadow: var(--shadow-light);
-  border: 1px solid var(--border-color);
-  position: relative;
-  overflow: hidden;
-}
-
-.projects-cta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-success);
-  background-size: 200% 200%;
-  animation: gradientShift 3s ease infinite;
-}
-
-.projects-cta p {
-  font-size: 1.3rem;
-  color: var(--text-secondary);
-  margin-bottom: 25px;
-  font-weight: 500;
-}
 
 /* Floating elements for visual interest */
 .projects::after {
@@ -369,11 +340,4 @@
     font-size: 0.85rem;
   }
 
-  .projects-cta {
-    padding: 40px 20px;
-  }
-
-  .projects-cta p {
-    font-size: 1.1rem;
-  }
 } 

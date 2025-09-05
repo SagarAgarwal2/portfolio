@@ -1,5 +1,5 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* CSS Variables for enhanced theming */
 :root {
@@ -32,6 +32,16 @@
   --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --gradient-success: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  
+  /* New enhanced gradients */
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  --gradient-border: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+  
+  /* Glass morphism effects */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 /* Enhanced Dark Mode Colors */
@@ -404,4 +414,70 @@ section::before {
 ::-moz-selection {
   background: var(--primary-color);
   color: white;
+}
+
+/* Theme Classes */
+.theme-ocean {
+  --primary-color: #4f46e5;
+  --primary-dark: #3730a3;
+  --primary-light: #6366f1;
+  --accent-color: #06b6d4;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --bg-primary: #0f0f23;
+  --bg-secondary: #1a1a2e;
+  --bg-gradient: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  --glow-color: rgba(255, 165, 0, 0.3);
+}
+
+.theme-sunset {
+  --primary-color: #ff6b35;
+  --primary-dark: #e55a2b;
+  --primary-light: #ff8c69;
+  --accent-color: #ffd93d;
+  --text-primary: #2d1b1b;
+  --text-secondary: #4a3c3c;
+  --bg-primary: #fff5f0;
+  --bg-secondary: #ffe8d6;
+  --bg-gradient: linear-gradient(135deg, #fff5f0 0%, #ffe8d6 50%, #ffd4b3 100%);
+  --glow-color: rgba(255, 107, 53, 0.3);
+}
+
+.theme-forest {
+  --primary-color: #2d5a27;
+  --primary-dark: #1e3d1a;
+  --primary-light: #4a7c59;
+  --accent-color: #7cb342;
+  --text-primary: #1b2f1a;
+  --text-secondary: #3d4d3c;
+  --bg-primary: #f0f7f0;
+  --bg-secondary: #e8f5e8;
+  --bg-gradient: linear-gradient(135deg, #f0f7f0 0%, #e8f5e8 50%, #d4f0d4 100%);
+  --glow-color: rgba(45, 90, 39, 0.3);
+}
+
+.theme-galaxy {
+  --primary-color: #8b5cf6;
+  --primary-dark: #7c3aed;
+  --primary-light: #a78bfa;
+  --accent-color: #ec4899;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --bg-primary: #0f0a1a;
+  --bg-secondary: #1a1626;
+  --bg-gradient: linear-gradient(135deg, #0f0a1a 0%, #1a1626 50%, #2d1b69 100%);
+  --glow-color: rgba(139, 92, 246, 0.3);
+}
+
+.theme-minimal {
+  --primary-color: #374151;
+  --primary-dark: #1f2937;
+  --primary-light: #6b7280;
+  --accent-color: #9ca3af;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%);
+  --glow-color: rgba(55, 65, 81, 0.1);
 }

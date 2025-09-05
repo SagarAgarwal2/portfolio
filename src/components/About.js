@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaLaptopCode, FaUniversity } from 'react-icons/fa';
+import { FaCalendarAlt, FaGraduationCap, FaLaptopCode, FaMapMarkerAlt, FaUniversity } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -35,23 +35,33 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-text" data-aos="fade-right">
-            <h3>Who I Am</h3>
-            <p>
-              I'm a passionate Computer Science undergraduate at Birla Institute of Technology, 
-              Mesra, with a strong foundation in software development and 
-              a keen interest in emerging technologies.
-            </p>
-            <p>
-              My journey in technology began with a curiosity to solve real-world problems 
-              through innovative software solutions. I specialize in full-stack development, 
-              Flutter mobile applications, and blockchain technology, with a particular focus 
-              on safety applications and decentralized systems.
-            </p>
-            <p>
-              I believe in continuous learning and staying updated with the latest industry 
-              trends. My goal is to create impactful applications that make a difference in 
-              people's lives while contributing to the advancement of technology.
-            </p>
+            <div className="about-intro">
+              <h3>Who I Am</h3>
+              <div className="intro-highlight">
+                <span className="highlight-text">Passionate Developer</span>
+                <span className="highlight-subtitle">Building the Future, One Line at a Time</span>
+              </div>
+            </div>
+            
+            <div className="about-story">
+              <p>
+                I'm a passionate Computer Science undergraduate at Birla Institute of Technology, 
+                Mesra, with a strong foundation in software development and 
+                a keen interest in emerging technologies.
+              </p>
+              <p>
+                My journey in technology began with a curiosity to solve real-world problems 
+                through innovative software solutions. I specialize in full-stack development, 
+                Flutter mobile applications, and blockchain technology, with a particular focus 
+                on safety applications and decentralized systems.
+              </p>
+              <p>
+                I believe in continuous learning and staying updated with the latest industry 
+                trends. My goal is to create impactful applications that make a difference in 
+                people's lives while contributing to the advancement of technology.
+              </p>
+            </div>
+
           </div>
 
           <div className="about-details" data-aos="fade-left">
@@ -66,8 +76,14 @@ const About = () => {
                   <FaUniversity className="icon" />
                   {education.institution}
                 </p>
-                <p className="location">{education.location}</p>
-                <p className="duration">{education.duration}</p>
+                <p className="location">
+                  <FaMapMarkerAlt className="icon" />
+                  {education.location}
+                </p>
+                <p className="duration">
+                  <FaCalendarAlt className="icon" />
+                  {education.duration}
+                </p>
               </div>
             </div>
 

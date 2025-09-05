@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { FaBars, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
+import { FaBars, FaMoon, FaSun, FaTimes, FaPalette } from 'react-icons/fa';
 import './Navbar.css';
 
-const Navbar = ({ darkMode, toggleDarkMode }) => {
+const Navbar = ({ currentTheme, changeTheme, themes }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,15 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     setIsOpen(false);
   };
 
+  const toggleThemeMenu = () => {
+    setIsThemeMenuOpen(!isThemeMenuOpen);
+  };
+
+  const handleThemeChange = (themeName) => {
+    changeTheme(themeName);
+    setIsThemeMenuOpen(false);
+  };
+
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -36,7 +46,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
           <span onClick={() => scrollToSection('home')}>Sagar Agarwal</span>
@@ -55,9 +65,25 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </div>
 
         <div className="nav-actions">
-          <button className="theme-toggle" onClick={toggleDarkMode}>
-            {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
+          <div className="theme-selector">
+            <button className="theme-toggle" onClick={toggleThemeMenu} title="Change Theme">
+              <FaPalette />
+            </button>
+            
+            {isThemeMenuOpen && (
+              <div className="theme-menu">
+                {Object.entries(themes).map(([key, theme]) => (
+                  <button
+                    key={key}
+                    className={`theme-option ${currentTheme === key ? 'active' : ''}`}
+                    onClick={() => handleThemeChange(key)}
+                  >
+                    {theme.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           
           <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes /> : <FaBars />}
