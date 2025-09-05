@@ -1,5 +1,5 @@
 .skills {
-  background: linear-gradient(135deg, #181f2a 0%, #232946 100%);
+  background: var(--bg-gradient);
   position: relative;
   overflow: hidden;
 }
@@ -25,11 +25,11 @@
 }
 
 .skill-category {
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-secondary);
   border-radius: 16px;
   padding: 25px;
-  box-shadow: 0 4px 32px 0 #23294655;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-heavy);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   position: relative;
@@ -51,13 +51,13 @@
 
 .skill-category:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 32px 0 #4f46e5aa;
+  box-shadow: var(--shadow-glow);
 }
 
 .category-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 20px;
   text-align: center;
   position: relative;
@@ -86,10 +86,10 @@
   align-items: center;
   gap: 15px;
   padding: 18px;
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-primary);
   border-radius: 12px;
-  box-shadow: 0 2px 16px 0 #23294644;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-medium);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -114,20 +114,20 @@
 
 .skill-item:hover {
   transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 8px 32px 0 #06b6d4aa;
-  border-color: #06b6d4;
+  box-shadow: var(--shadow-glow);
+  border-color: var(--accent-color);
 }
 
 .skill-icon {
   font-size: 2rem;
-  color: #a5b4fc;
+  color: var(--primary-color);
   min-width: 40px;
   transition: all 0.3s ease;
 }
 
 .skill-item:hover .skill-icon {
   transform: scale(1.1) rotate(5deg);
-  color: #06b6d4;
+  color: var(--accent-color);
 }
 
 .skill-info {
@@ -137,14 +137,14 @@
 .skill-info h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .skill-bar {
   width: 100%;
   height: 8px;
-  background: #232946;
+  background: var(--bg-tertiary);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 6px;
@@ -183,17 +183,17 @@
 
 .skill-level {
   font-size: 0.9rem;
-  color: #a5b4fc;
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
 .skills-summary {
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-secondary);
   border-radius: 16px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 4px 32px 0 #23294655;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-heavy);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   position: relative;
@@ -215,7 +215,7 @@
 .skills-summary h3 {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 20px;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -225,7 +225,7 @@
 
 .skills-summary p {
   font-size: 1.1rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 25px;
   max-width: 800px;
@@ -241,10 +241,10 @@
 
 .summary-item {
   padding: 20px;
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-primary);
   border-radius: 12px;
-  box-shadow: 0 2px 16px 0 #23294644;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-medium);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -266,19 +266,19 @@
 
 .summary-item:hover {
   transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 8px 32px 0 #4f46e5aa;
+  box-shadow: var(--shadow-glow);
 }
 
 .summary-item h4 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .summary-item p {
   font-size: 0.95rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
 }

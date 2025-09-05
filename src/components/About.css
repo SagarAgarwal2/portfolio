@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: var(--bg-gradient);
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
@@ -33,7 +33,7 @@
 .about-text h3 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 15px;
 }
 
@@ -47,7 +47,7 @@
 .highlight-text {
   font-size: 1.1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,24 +55,24 @@
 
 .highlight-subtitle {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: var(--text-secondary);
   font-style: italic;
 }
 
 .about-story p {
   font-size: 1.1rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 20px;
 }
 
 
 .education-card {
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-secondary);
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 4px 32px 0 #23294655;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-heavy);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   margin-bottom: 30px;
@@ -87,25 +87,25 @@
 
 .card-icon {
   font-size: 2rem;
-  color: #a5b4fc;
+  color: var(--primary-color);
 }
 
 .card-header h4 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .card-content h5 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .card-content p {
   font-size: 1rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -113,13 +113,13 @@
 }
 
 .card-content .icon {
-  color: #4f46e5;
+  color: var(--primary-color);
 }
 
 .experience-section h4 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
@@ -133,30 +133,30 @@
   display: flex;
   gap: 15px;
   padding: 24px;
-  background: rgba(36, 41, 61, 0.85);
+  background: var(--bg-primary);
   border-radius: 16px;
-  box-shadow: 0 2px 16px 0 #23294644;
-  border: 1.5px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-medium);
+  border: 1.5px solid var(--border-color);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 .experience-icon {
   font-size: 1.5rem;
-  color: #06b6d4;
+  color: var(--accent-color);
   margin-top: 5px;
 }
 
 .experience-content h5 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .experience-content p {
   font-size: 0.95rem;
-  color: #cbd5e1;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 

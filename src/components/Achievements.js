@@ -6,15 +6,6 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "Smart India Hackathon Finalist",
-      description: "Reached the final round of Smart India Hackathon of college level, showcasing innovative solutions for national challenges.",
-      category: "National Competition",
-      icon: <FaTrophy />,
-      year: "2024",
-      highlight: true
-    },
-    {
-      id: 2,
       title: "Algorand Hackathon - Top 3",
       description: "Achieved top 3 ranking in the Algorand blockchain hackathon, demonstrating expertise in blockchain development.",
       category: "Blockchain Competition",
@@ -22,15 +13,7 @@ const Achievements = () => {
       year: "2024"
     },
     {
-      id: 3,
-      title: "Solar-Chain Project Finalist",
-      description: "Project 'Solar-Chain' reached the 3rd round finals in hackathon, showcasing peer-to-peer energy trading solution.",
-      category: "Project Competition",
-      icon: <FaAward />,
-      year: "2024"
-    },
-    {
-      id: 4,
+      id: 2,
       title: "Saviher",
       description: "Successfully developing a women safety app, demonstrating real-world impact.",
       category: "Project Achievement",

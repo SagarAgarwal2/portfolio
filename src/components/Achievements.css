@@ -23,12 +23,18 @@
 .achievement-card.highlight {
   background: var(--gradient-primary);
   color: white;
+  border: 2px solid var(--primary-color);
 }
 
 .achievement-card.highlight .achievement-icon,
 .achievement-card.highlight .achievement-title,
 .achievement-card.highlight .achievement-description,
 .achievement-card.highlight .achievement-category span {
+  color: white !important;
+}
+
+.achievement-card.highlight .achievement-year {
+  background: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -57,21 +63,46 @@
   flex: 1;
 }
 
-/* Ensure text visibility in dark themes */
+/* Ensure text visibility in all themes */
+.achievement-title {
+  color: var(--text-primary);
+}
+
+.achievement-description {
+  color: var(--text-secondary);
+}
+
+/* Override for dark themes where text-primary might be too dark */
 .theme-ocean .achievement-title,
-.theme-galaxy .achievement-title {
+.theme-galaxy .achievement-title,
+.theme-ocean .achievement-description,
+.theme-galaxy .achievement-description {
   color: #ffffff;
 }
 
-.theme-ocean .achievement-description,
-.theme-galaxy .achievement-description {
-  color: #e2e8f0;
+/* Ensure highlight card is always visible */
+.achievement-card.highlight .achievement-title,
+.achievement-card.highlight .achievement-description {
+  color: white !important;
 }
 
 .theme-ocean .achievement-category span,
 .theme-galaxy .achievement-category span {
   color: var(--primary-color);
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure visibility in light themes */
+.theme-sunset .achievement-title,
+.theme-forest .achievement-title,
+.theme-minimal .achievement-title {
+  color: var(--text-primary);
+}
+
+.theme-sunset .achievement-description,
+.theme-forest .achievement-description,
+.theme-minimal .achievement-description {
+  color: var(--text-secondary);
 }
 
 .achievement-year {
