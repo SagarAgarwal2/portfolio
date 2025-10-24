@@ -1,23 +1,30 @@
-import React from 'react';
-import { FaAward, FaMedal, FaStar, FaTrophy } from 'react-icons/fa';
+import { FaMedal, FaStar, FaTrophy } from 'react-icons/fa';
 import './Achievements.css';
 
 const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "Algorand Hackathon - Top 3",
-      description: "Achieved top 3 ranking in the Algorand blockchain hackathon, demonstrating expertise in blockchain development.",
-      category: "Blockchain Competition",
-      icon: <FaMedal />,
+      title: "SaviHer - Women's Safety App",
+      description: "Successfully incubated at Bhamasha Techno Hub Jaipur with 100+ active users. Comprehensive safety application with real-time tracking and emergency features.",
+      category: "Startup Incubation",
+      icon: <FaStar />,
       year: "2024"
     },
     {
       id: 2,
-      title: "Saviher",
-      description: "Incubated at Bhamasha Techno Hub Jaipur",
-      category: "Project Achievement",
-      icon: <FaStar />,
+      title: "Smart Product Pricing - ML Challenge",
+      description: "Achieved 54% SMAPE ranking in top 2000 out of 7000+ teams in ML Challenge 2025. Built hybrid ensemble model with advanced feature engineering.",
+      category: "Machine Learning Competition",
+      icon: <FaTrophy />,
+      year: "2025"
+    },
+    {
+      id: 3,
+      title: "Algorand Hackathon - Top 3",
+      description: "Achieved top 3 ranking in the Algorand blockchain hackathon, demonstrating expertise in blockchain development with Solar-Chain project.",
+      category: "Blockchain Competition",
+      icon: <FaMedal />,
       year: "2024"
     }
   ];
@@ -61,16 +68,12 @@ const Achievements = () => {
         <div className="achievements-summary" data-aos="fade-up">
           <div className="summary-stats">
             <div className="stat-item">
-              <h3>2+</h3>
-              <p>Hackathon Finalist</p>
+              <h3>100+</h3>
+              <p>Active Users</p>
             </div>
             <div className="stat-item">
-              <h3>Top 3%</h3>
-              <p>Algorand Ranking</p>
-            </div>
-            <div className="stat-item">
-              <h3>4+</h3>
-              <p>Major Achievements</p>
+              <h3>Top 2000</h3>
+              <p>ML Challenge Ranking</p>
             </div>
           </div>
         </div>

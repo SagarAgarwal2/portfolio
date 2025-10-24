@@ -1,24 +1,23 @@
 import {
   FaBell,
+  FaBrain,
+  FaChartLine,
   FaCubes,
   FaExternalLinkAlt,
   FaGithub,
   FaLeaf,
   FaMapMarkerAlt,
   FaMobile,
-  FaUsers,
-  FaBrain,
-  FaChartLine,
-  FaTrophy
+  FaTrophy,
+  FaUsers
 } from 'react-icons/fa';
 
 import {
   SiAlgorand,
   SiFirebase,
   SiFlutter,
-  SiReact,
   SiPython,
-  SiScikitlearn
+  SiReact
 } from 'react-icons/si';
 
 import './Projects.css';
@@ -28,31 +27,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Smart Product Pricing",
-      subtitle: "ML Challenge 2025",
-      description: "Built an ML model to predict product prices using text, numeric, and image features. Developed a hybrid ensemble combining Random Forest, Gradient Boosting, and MLP with advanced feature engineering including TF-IDF, keyword indicators, and numeric extraction.",
-      features: [
-        "Hybrid Ensemble Model (RF, GB, MLP)",
-        "Multi-modal Feature Engineering",
-        "TF-IDF Text Processing",
-        "Keyword Indicators & Numeric Extraction",
-        "54% SMAPE Achievement (Top 2000/7000+ teams)",
-        "Model Validation in Scikit-learn"
-      ],
-      techStack: [
-        { name: "Python", icon: <SiPython /> },
-        { name: "Scikit-learn", icon: <SiScikitlearn /> },
-        { name: "NLP", icon: <FaBrain /> },
-        { name: "ML", icon: <FaChartLine /> }
-      ],
-      github: null,
-      live: null,
-      image: "ml-pricing-preview.jpg",
-      category: "Machine Learning",
-      timeline: "Jan 2025 – Present"
-    },
-    {
-      id: 2,
       title: "SaviHer",
       subtitle: "Women's Safety App",
       description: "A comprehensive women's safety application with SOS alerts, real-time location tracking, and emergency contact management. Built with Flutter and Firebase backend, serving 100+ active users. Incubated at Bhasha Techno Hub.",
@@ -73,6 +47,31 @@ const Projects = () => {
       live: null,
       image: "sheshield-preview.jpg",
       category: "Mobile App"
+    },
+    {
+      id: 2,
+      title: "Smart Product Pricing",
+      subtitle: "ML Challenge 2025",
+      description: "Built an ML model to predict product prices using text, numeric, and image features. Developed a hybrid ensemble combining Random Forest, Gradient Boosting, and MLP with advanced feature engineering including TF-IDF, keyword indicators, and numeric extraction.",
+      features: [
+        "Hybrid Ensemble Model (RF, GB, MLP)",
+        "Multi-modal Feature Engineering",
+        "TF-IDF Text Processing",
+        "Keyword Indicators & Numeric Extraction",
+        "54% SMAPE Achievement (Top 2000/7000+ teams)",
+        "Model Validation in Scikit-learn"
+      ],
+      techStack: [
+        { name: "Python", icon: <SiPython /> },
+        { name: "Scikit-learn", icon: <FaChartLine /> },
+        { name: "NLP", icon: <FaBrain /> },
+        { name: "ML", icon: <FaChartLine /> }
+      ],
+      github: null,
+      live: null,
+      image: "ml-pricing-preview.jpg",
+      category: "Machine Learning",
+      timeline: "Jan 2025 – Present"
     },
     {
       id: 3,
@@ -116,7 +115,6 @@ const Projects = () => {
               data-aos-delay={index * 200}
             >
               <div className="project-header">
-                <div className="project-category">{project.category}</div>
                 <div className="project-links">
                   {project.github && (
                     <a
@@ -177,14 +175,14 @@ const Projects = () => {
                 <div className="project-stats">
                   {project.id === 1 && (
                     <div className="stat">
-                      <FaTrophy />
-                      <span>Top 2000/7000+ Teams</span>
+                      <FaUsers />
+                      <span>100+ Users</span>
                     </div>
                   )}
                   {project.id === 2 && (
                     <div className="stat">
-                      <FaUsers />
-                      <span>100+ Users</span>
+                      <FaTrophy />
+                      <span>Top 2000/7000+ Teams</span>
                     </div>
                   )}
                   {project.id === 3 && (
