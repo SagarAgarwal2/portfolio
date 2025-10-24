@@ -6,10 +6,23 @@ import {
   FaLeaf,
   FaMapMarkerAlt,
   FaMobile,
-  FaUsers
+  FaUsers,
+  FaBrain,
+  FaChartLine,
+  FaTrophy
 } from 'react-icons/fa';
-import { SiAlgorand, SiFirebase, SiFlutter, SiReact } from 'react-icons/si';
+
+import {
+  SiAlgorand,
+  SiFirebase,
+  SiFlutter,
+  SiReact,
+  SiPython,
+  SiScikitlearn
+} from 'react-icons/si';
+
 import './Projects.css';
+
 
 const Projects = () => {
   const projects = [
