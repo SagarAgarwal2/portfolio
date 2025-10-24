@@ -1,13 +1,12 @@
-import React from 'react';
 import {
-    FaBell,
-    FaCubes,
-    FaExternalLinkAlt,
-    FaGithub,
-    FaLeaf,
-    FaMapMarkerAlt,
-    FaMobile,
-    FaUsers
+  FaBell,
+  FaCubes,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaLeaf,
+  FaMapMarkerAlt,
+  FaMobile,
+  FaUsers
 } from 'react-icons/fa';
 import { SiAlgorand, SiFirebase, SiFlutter, SiReact } from 'react-icons/si';
 import './Projects.css';
@@ -16,15 +15,40 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "SheShield",
+      title: "Smart Product Pricing",
+      subtitle: "ML Challenge 2025",
+      description: "Built an ML model to predict product prices using text, numeric, and image features. Developed a hybrid ensemble combining Random Forest, Gradient Boosting, and MLP with advanced feature engineering including TF-IDF, keyword indicators, and numeric extraction.",
+      features: [
+        "Hybrid Ensemble Model (RF, GB, MLP)",
+        "Multi-modal Feature Engineering",
+        "TF-IDF Text Processing",
+        "Keyword Indicators & Numeric Extraction",
+        "54% SMAPE Achievement (Top 2000/7000+ teams)",
+        "Model Validation in Scikit-learn"
+      ],
+      techStack: [
+        { name: "Python", icon: <SiPython /> },
+        { name: "Scikit-learn", icon: <SiScikitlearn /> },
+        { name: "NLP", icon: <FaBrain /> },
+        { name: "ML", icon: <FaChartLine /> }
+      ],
+      github: null,
+      live: null,
+      image: "ml-pricing-preview.jpg",
+      category: "Machine Learning",
+      timeline: "Jan 2025 – Present"
+    },
+    {
+      id: 2,
+      title: "SaviHer",
       subtitle: "Women's Safety App",
-      description: "A comprehensive women's safety application with SOS alerts, real-time location tracking, and emergency contact management. Built with Flutter and Firebase backend, serving 100+ active users.",
+      description: "A comprehensive women's safety application with SOS alerts, real-time location tracking, and emergency contact management. Built with Flutter and Firebase backend, serving 100+ active users. Incubated at Bhasha Techno Hub.",
       features: [
         "SOS Emergency Alerts",
         "Real-time Location Tracking",
         "Emergency Contact Management",
         "Firebase Backend Integration",
-        "100+ Active Users"
+        "Incubated at Bhasha Techno Hub"
       ],
       techStack: [
         { name: "Flutter", icon: <SiFlutter /> },
@@ -38,7 +62,7 @@ const Projects = () => {
       category: "Mobile App"
     },
     {
-      id: 2,
+      id: 3,
       title: "Solar-Chain",
       subtitle: "Peer-to-Peer Energy Trading",
       description: "A decentralized application for peer-to-peer energy trading using Algorand blockchain. Smart contracts enable secure energy transactions between producers and consumers. Finalist in 3rd round hackathon.",
@@ -72,19 +96,19 @@ const Projects = () => {
 
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div 
-              key={project.id} 
-              className="project-card" 
-              data-aos="fade-up" 
+            <div
+              key={project.id}
+              className="project-card"
+              data-aos="fade-up"
               data-aos-delay={index * 200}
             >
               <div className="project-header">
                 <div className="project-category">{project.category}</div>
                 <div className="project-links">
                   {project.github && (
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
                       title="View on GitHub"
@@ -93,9 +117,9 @@ const Projects = () => {
                     </a>
                   )}
                   {project.live && (
-                    <a 
-                      href={project.live} 
-                      target="_blank" 
+                    <a
+                      href={project.live}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
                       title="Live Demo"
@@ -109,6 +133,9 @@ const Projects = () => {
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <h4 className="project-subtitle">{project.subtitle}</h4>
+                {project.timeline && (
+                  <div className="project-timeline">{project.timeline}</div>
+                )}
                 <p className="project-description">{project.description}</p>
 
                 <div className="project-features">
@@ -137,11 +164,17 @@ const Projects = () => {
                 <div className="project-stats">
                   {project.id === 1 && (
                     <div className="stat">
+                      <FaTrophy />
+                      <span>Top 2000/7000+ Teams</span>
+                    </div>
+                  )}
+                  {project.id === 2 && (
+                    <div className="stat">
                       <FaUsers />
                       <span>100+ Users</span>
                     </div>
                   )}
-                  {project.id === 2 && (
+                  {project.id === 3 && (
                     <div className="stat">
                       <FaBell />
                       <span>Hackathon Finalist</span>

@@ -15,7 +15,7 @@ const Achievements = () => {
     {
       id: 2,
       title: "Saviher",
-      description: "Successfully developing a women safety app, demonstrating real-world impact.",
+      description: "Incubated at Bhamasha Techno Hub Jaipur",
       category: "Project Achievement",
       icon: <FaStar />,
       year: "2024"
@@ -67,10 +67,6 @@ const Achievements = () => {
             <div className="stat-item">
               <h3>Top 3%</h3>
               <p>Algorand Ranking</p>
-            </div>
-            <div className="stat-item">
-              <h3>100+</h3>
-              <p>Active Users</p>
             </div>
             <div className="stat-item">
               <h3>4+</h3>

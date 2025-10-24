@@ -7,7 +7,7 @@ const Leadership = () => {
   const leadershipRoles = [
     {
       id: 1,
-      title: "Google Developer Group Coordinator",
+      title: "Cyber Security Lead",
       organization: "Google Developer Group",
       duration: "2023 - Present",
       description: "Leading and coordinating Google Developer Group activities, organizing tech events, workshops, and community building initiatives.",

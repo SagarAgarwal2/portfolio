@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { FaBars, FaMoon, FaSun, FaTimes, FaPalette } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaBars, FaPalette, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = ({ currentTheme, changeTheme, themes }) => {
@@ -49,9 +49,9 @@ const Navbar = ({ currentTheme, changeTheme, themes }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <span onClick={() => scrollToSection('home')}>Sagar Agarwal</span>
+          {/* Logo removed */}
         </div>
-        
+
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
           {navItems.map((item) => (
             <div
@@ -69,7 +69,7 @@ const Navbar = ({ currentTheme, changeTheme, themes }) => {
             <button className="theme-toggle" onClick={toggleThemeMenu} title="Change Theme">
               <FaPalette />
             </button>
-            
+
             {isThemeMenuOpen && (
               <div className="theme-menu">
                 {Object.entries(themes).map(([key, theme]) => (
@@ -84,7 +84,7 @@ const Navbar = ({ currentTheme, changeTheme, themes }) => {
               </div>
             )}
           </div>
-          
+
           <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes /> : <FaBars />}
           </div>

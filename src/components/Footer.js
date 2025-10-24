@@ -34,7 +34,6 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Sagar Agarwal</h3>
-            <p>Blockchain & Safety App Developer</p>
             <p>Passionate about creating innovative solutions that make a difference.</p>
           </div>
 

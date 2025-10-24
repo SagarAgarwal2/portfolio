@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaCode, FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
+import { FaCode, FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Home.css';
 
 const Home = ({ currentTheme }) => {
@@ -58,7 +57,7 @@ const Home = ({ currentTheme }) => {
               </button>
               <button 
                 className="btn btn-secondary"
-                onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open('/Sagar-Agarwal-Resume.pdf', '_blank')}
               >
                 <FaDownload /> My resume
               </button>
